@@ -1,0 +1,21 @@
+test_concurrent_duplicate_deliveries_create_one_reply (test_faq_bot.BotTests) ... ok
+test_conflicting_id_rolls_back_whole_batch (test_faq_bot.BotTests) ... ok
+test_exact_faq_and_persistent_duplicate_guard (test_faq_bot.BotTests) ... ok
+test_http_challenge_signed_post_and_bad_signature (test_faq_bot.BotTests) ... ok
+test_invalid_token_is_failed_and_not_retried (test_faq_bot.BotTests) ... ok
+test_live_sender_requires_explicit_configuration (test_faq_bot.BotTests) ... ok
+test_network_timeout_is_not_automatically_retried (test_faq_bot.BotTests) ... ok
+test_rate_limit_stays_pending (test_faq_bot.BotTests) ... ok
+test_status_notifications_do_not_trigger_reply (test_faq_bot.BotTests) ... ok
+test_stop_cancels_queued_reply_and_start_resumes (test_faq_bot.BotTests) ... ok
+test_successful_send_records_receipt (test_faq_bot.BotTests) ... ok
+test_tampered_or_unsigned_payload_has_no_side_effects (test_faq_bot.BotTests) ... ok
+test_unknown_question_flags_human_and_silences_bot (test_faq_bot.BotTests) ... ok
+test_unsupported_media_hands_off_without_guessing (test_faq_bot.BotTests) ... ok
+test_verification_challenge_and_wrong_token (test_faq_bot.BotTests) ... ok
+test_wrong_destination_and_malformed_event_rejected (test_faq_bot.BotTests) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.920s
+
+OK
