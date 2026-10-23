@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#155e4b"><meta name="description" content="Split a single-sheet Excel workbook into one file per customer, locally in your browser.">
+<title>Customer Sheet Splitter</title><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><a class="brand" href="./"><span class="mark">▤</span> SHEET SPLITTER</a><span class="pill" id="offline">Local processing</span></header>
+<div class="intro"><p class="eyebrow">ONE WORKBOOK → CUSTOMER FILES</p><h1>Stop splitting<br>spreadsheets by hand.</h1><p class="lede">Choose a customer column. Get a separate Excel file for each customer, together in one ZIP.</p></div>
+<div class="layout"><section class="card" aria-label="Split a workbook"><div class="step">01 / CHOOSE YOUR DATA</div>
+<label class="drop" for="file"><span class="file-icon">↥</span><strong>Choose an Excel workbook</strong><span>Single sheet · .xlsx · up to 10 MB</span><input id="file" type="file" accept=".xlsx"></label>
+<button id="sample" class="secondary">Try a synthetic 12,000-row example</button><p id="filename" class="muted">Your file stays on this device.</p>
+<label class="field" for="column">02 / CUSTOMER COLUMN</label><select id="column" disabled><option>Choose a workbook first</option></select>
+<p class="hint">Row 1 is the header. Names are matched exactly; blank customer cells go into an Unassigned file.</p>
+<button id="split" class="primary" disabled>Split & prepare ZIP <span>→</span></button><p id="status" role="status" aria-live="polite">Ready when you are.</p>
+<a id="download" class="download" hidden download="customer-files.zip">Download customer files ↓</a></section>
+<section class="results" aria-label="Export results"><div class="step">THE RESULT</div><h2>Every row accounted for.</h2><div class="stats"><div><strong id="rows">—</strong><span>data rows</span></div><div><strong id="groups">—</strong><span>customer files</span></div></div>
+<div id="empty" class="empty"><span>▤ → ▤ ▤ ▤</span><p>Your file list appears here after splitting.</p></div>
+<div id="filelist" hidden><table><thead><tr><th>FILE</th><th>ROWS</th></tr></thead><tbody id="files"></tbody></table></div>
+<p class="note">The ZIP includes a row-count manifest. Plain cell values and data types are exported; the original layout is rebuilt. Use a values-only copy without formulas or merged cells.</p></section></div>
+<footer><p>No uploads. No account. No API bill.</p><p>Original AI-assisted portfolio demo · Synthetic example · No client deployment claimed</p></footer>
+</main><script src="vendor/exceljs.min.js"></script><script src="app.js"></script></body></html>

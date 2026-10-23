@@ -1,0 +1,15 @@
+✔ no customer mixing or dropped rows; types and special characters round-trip (1455.4743ms)
+✔ unsafe and colliding filenames remain distinct ZIP basenames (236.9602ms)
+✔ formula input is rejected instead of exporting stale results (150.285ms)
+✔ multiple sheets and merged cells are rejected without partial export (234.4943ms)
+✔ malformed, empty and invalid-column inputs fail clearly (433.7869ms)
+✔ blank data rows are omitted; nonblank rows with empty customers retained (328.3713ms)
+✔ 12000-row / 90-customer archive is re-opened and every row checked (12982.3222ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16025.7722

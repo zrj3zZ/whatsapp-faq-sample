@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-23T13:47:40.860Z",
+  "runtime": "v24.15.0",
+  "exceljs": "4.4.0",
+  "rows": 12000,
+  "groups": 90,
+  "splitElapsedMs": 1879,
+  "zipBytes": 943864,
+  "checks": "Reopened all 90 XLSX files; exact row values, group isolation, no duplicate/lost IDs, matching manifest."
+}
